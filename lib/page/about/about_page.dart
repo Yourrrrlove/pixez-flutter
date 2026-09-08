@@ -203,6 +203,7 @@ class _AboutPageState extends State<AboutPage> {
                       child: Container(
                         width: 80,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Column(
@@ -212,7 +213,7 @@ class _AboutPageState extends State<AboutPage> {
                                   backgroundImage: NetworkImage(data.avatar),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0).copyWith(bottom: 0),
                                   child: Text(
                                     data.name,
                                     textAlign: TextAlign.center,
