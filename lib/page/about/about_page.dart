@@ -193,6 +193,7 @@ class _AboutPageState extends State<AboutPage> {
                 itemBuilder: (context, index) {
                   final data = contributors[index];
                   return Card(
+                    clipBehavior: .hardEdge,
                     child: InkWell(
                       onTap: () async {
                         try {
@@ -383,6 +384,7 @@ class _AboutPageState extends State<AboutPage> {
                 subtitle: Text(I18n.of(context).donate_message),
               ),
               Card(
+                clipBehavior: .hardEdge,
                 child: ListTile(
                   title: Text('AliPay'),
                   subtitle: Text('912756674@qq.com'),
@@ -390,6 +392,7 @@ class _AboutPageState extends State<AboutPage> {
                 ),
               ),
               Card(
+                clipBehavior: .hardEdge,
                 child: ListTile(
                   title: Text('Wechat Pay'),
                   subtitle: Text('tap'),
